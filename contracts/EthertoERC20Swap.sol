@@ -63,7 +63,7 @@ contract EthertoERC20Swap is ERC20Swapper, Initializable, AccessControlUpgradeab
         override
     {}
 
-   function getETHPrie() public view returns (int) {
+   function getETHPrice() public view returns (int) {
         (
             /*uint80 roundID*/,
             int price,
@@ -83,7 +83,7 @@ contract EthertoERC20Swap is ERC20Swapper, Initializable, AccessControlUpgradeab
         uint256 erc20TokenPrice = 2; 
 
         //fetching the ETH price in dollars by using ChainLink aggregator function.
-        uint256 ethPrice =  uint256(getETHPrie());
+        uint256 ethPrice =  uint256(getETHPrice());
 
         //3% will go as fee
         uint256 ethAmountWithFee = (msg.value * 97) / 1000; 

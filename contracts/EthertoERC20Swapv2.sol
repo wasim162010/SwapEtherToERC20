@@ -14,6 +14,11 @@ interface ERC20Swapper {
     function swapEtherToToken(address token, uint minAmount) external payable returns (uint);
 }
 
+/* 
+THIS SMART CONTRACT DOES NOT CONTAIN ANY CODE CHANGE BUT ITHAS BEEN PUT BY RENAMING THE ORIGINAL TO THE v2 IN ORDER TO SHOW HOW TO 
+UPGRADE USING HARDHAT [FILE : 'deploySwapContractv2.js']
+*/
+
 contract EthertoERC20Swapv2 is ERC20Swapper, Initializable, AccessControlUpgradeable, UUPSUpgradeable {
 
     struct Swap {
@@ -63,7 +68,7 @@ contract EthertoERC20Swapv2 is ERC20Swapper, Initializable, AccessControlUpgrade
         override
     {}
 
-   function getETHPrie() public view returns (int) {
+   function getETHPrice() public view returns (int) {
         (
             /*uint80 roundID*/,
             int price,
@@ -82,7 +87,7 @@ contract EthertoERC20Swapv2 is ERC20Swapper, Initializable, AccessControlUpgrade
         require(minAmount > 0, "Token amount should be greater then zero");
 
         //fetching the ETH price in dollars by using ChainLink aggregator function.
-        uint256 ethPrice =  uint256(getETHPrie());
+        uint256 ethPrice =  uint256(getETHPrice());
 
         //3% will go as fee
         uint256 ethAmountWithFee = (msg.value * 97) / 1000; 

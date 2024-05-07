@@ -34,3 +34,11 @@ npx hardhat run scripts/deploySwapContract.js --network sepolia
 Suppose you want to upgrade the smart contract to the v2, say 'EthertoERC20Swapv2', please refer the 'deploySwapContractv2.js' and provide necessary inputs in it and execute : npx hardhat run scripts/deploySwapContractv2.js --network sepolia 
 
 
+
+--- Deployed contract address in Sepolia :
+Implementation contract :  
+    contract address : 0x4b12fB71CC9B65518F46Bf0E0A44B776555075e2
+    url              : https://sepolia.etherscan.io/address/0x4b12fb71cc9b65518f46bf0e0a44b776555075e2#code 
+Proxy contract          : 
+    contract address : 0xc6d1DA73ba28a3Ef87f5288005e2f203174b3D2B
+     url             : https://sepolia.etherscan.io/address/0xc6d1DA73ba28a3Ef87f5288005e2f203174b3D2B#readProxyContract
