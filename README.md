@@ -14,7 +14,7 @@ npx hardhat run scripts/deploy.js
 
 # PREREQUISITES to run the project :
 1. Create an .env file at the root level by referring to '.env-example'
-2. In 'PRIVATE_KEY','INFURA_API_KEY' and 'ETHERSCAN_API_KEY', put your account private key, infura api key and etherscan API key. For etherscan API key, create an account in etherscan[it's free] and copy api key. It is required to verify the source code of the smart contract so that 'Read as proxy' and 'write as proxy' smart contract option can come in the etherscan.
+2. In 'PRIVATE_KEY','INFURA_API_KEY' , put your account private key, infura api key and etherscan API key. 
 
 # To run local hardhat node :
 npx hardhat node
