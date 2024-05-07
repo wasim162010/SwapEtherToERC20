@@ -1,0 +1,1014 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xa31757445Ec4e2d6B722f4adFFC322B08f29E253",
+      "txHash": "0x5881610c2e365e8324943baa193cde85bb0ae7c21c764a6978899cc381232765",
+      "kind": "uups"
+    },
+    {
+      "address": "0x65a2DE51B617673e3958618D54cC8cF452BC3F88",
+      "txHash": "0x7182dfe6d1a3084cf289836fc235f125032994c94484c137a80ef1301647cfe7",
+      "kind": "uups"
+    },
+    {
+      "address": "0x5F1b58aCdcD13Ef63f0409b6dDdfa7E904F30D15",
+      "txHash": "0x7fce1a68ab588b52394b68c3c1f0e7031ec018c21862130c506e6202710d9498",
+      "kind": "uups"
+    },
+    {
+      "address": "0xaDd91D9f89c6872Dc6203DB49082796D83921b55",
+      "txHash": "0xcc61dbf4404b01d9d2ec200e1b5a549133ac9bb301713c16dc62172988749531",
+      "kind": "uups"
+    },
+    {
+      "address": "0xeecE636a45287e39B46511D3626E11Ea435FF9f0",
+      "txHash": "0x6567e548454da69e6f7e5593dbbfda4b5f80c4ea9369bdd811365f7755ce306d",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "03f456c26a1908370f5024b8e91e977e09d322a2149922f1101750ff641e8d2e": {
+      "address": "0x78191938bdf2503c7308Ac0479093244A950a2e6",
+      "txHash": "0x63519d7f7238c33758d8d9806b219487600a1aa509de20e6fefa4388df871cba",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)80_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:62"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:260"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "label": "swapLogs",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_mapping(t_address,t_array(t_struct(Swap)2979_storage)dyn_storage)",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:34"
+          },
+          {
+            "label": "swaps",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_mapping(t_bytes32,t_struct(Swap)2979_storage)",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:36"
+          },
+          {
+            "label": "swapStates",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_mapping(t_bytes32,t_enum(States)2983)",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:37"
+          },
+          {
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "254",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:43"
+          },
+          {
+            "label": "ercToken",
+            "offset": 0,
+            "slot": "255",
+            "type": "t_contract(IERC20)2940",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:45"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Swap)2979_storage)dyn_storage": {
+            "label": "struct EthertoERC20Swap.Swap[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2940": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_enum(States)2983": {
+            "label": "enum EthertoERC20Swap.States",
+            "members": [
+              "ISSUE",
+              "OPEN",
+              "SUCCESS"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_int256": {
+            "label": "int256",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_struct(Swap)2979_storage)dyn_storage)": {
+            "label": "mapping(address => struct EthertoERC20Swap.Swap[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_enum(States)2983)": {
+            "label": "mapping(bytes32 => enum EthertoERC20Swap.States)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)80_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(Swap)2979_storage)": {
+            "label": "mapping(bytes32 => struct EthertoERC20Swap.Swap)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)80_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Swap)2979_storage": {
+            "label": "struct EthertoERC20Swap.Swap",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "ethTrader",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "erc20Value",
+                "type": "t_int256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "erc20Trader",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "erc20ContractAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "swapDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "bb3d72a1db0cbd77ebc6c53d93e3ade2faaa54ff5d61a69548d6fc1ace7f4b03": {
+      "address": "0xe80bF8838d1B6a9531A8db1aD879C74Cfb119c1f",
+      "txHash": "0x657654a66654b8f9ff1613cdb01974490016c3067c0a396030eea359dc5791af",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)80_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:62"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:260"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "label": "swapLogs",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_mapping(t_address,t_array(t_struct(Swap)2979_storage)dyn_storage)",
+            "contract": "EthertoERC20Swapv2",
+            "src": "contracts/EthertoERC20Swapv2.sol:35"
+          },
+          {
+            "label": "swaps",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_mapping(t_bytes32,t_struct(Swap)2979_storage)",
+            "contract": "EthertoERC20Swapv2",
+            "src": "contracts/EthertoERC20Swapv2.sol:37"
+          },
+          {
+            "label": "swapStates",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_mapping(t_bytes32,t_enum(States)2983)",
+            "contract": "EthertoERC20Swapv2",
+            "src": "contracts/EthertoERC20Swapv2.sol:38"
+          },
+          {
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "254",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "EthertoERC20Swapv2",
+            "src": "contracts/EthertoERC20Swapv2.sol:44"
+          },
+          {
+            "label": "ercToken",
+            "offset": 0,
+            "slot": "255",
+            "type": "t_contract(IERC20)2940",
+            "contract": "EthertoERC20Swapv2",
+            "src": "contracts/EthertoERC20Swapv2.sol:46"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Swap)2979_storage)dyn_storage": {
+            "label": "struct EthertoERC20Swapv2.Swap[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2940": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_enum(States)2983": {
+            "label": "enum EthertoERC20Swapv2.States",
+            "members": [
+              "ISSUE",
+              "OPEN",
+              "SUCCESS"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_int256": {
+            "label": "int256",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_array(t_struct(Swap)2979_storage)dyn_storage)": {
+            "label": "mapping(address => struct EthertoERC20Swapv2.Swap[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_enum(States)2983)": {
+            "label": "mapping(bytes32 => enum EthertoERC20Swapv2.States)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)80_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(Swap)2979_storage)": {
+            "label": "mapping(bytes32 => struct EthertoERC20Swapv2.Swap)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)80_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Swap)2979_storage": {
+            "label": "struct EthertoERC20Swapv2.Swap",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "ethTrader",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "erc20Value",
+                "type": "t_int256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "erc20Trader",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "erc20ContractAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "swapDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "2deae3b59799fb0e5110540ea9fd101c14bbef7c34af6e2aea7a58105679e0bd": {
+      "address": "0x2715942C822135d703C8B347eCd9BdbE19d164c3",
+      "txHash": "0xae050a3d90ac1909e6496f54fcba30ba218731cd7100631cf0373680e88012f0",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)80_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:62"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:260"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "label": "swapLogs",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_mapping(t_address,t_array(t_struct(Swap)2979_storage)dyn_storage)",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:34"
+          },
+          {
+            "label": "swaps",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_mapping(t_bytes32,t_struct(Swap)2979_storage)",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:36"
+          },
+          {
+            "label": "swapStates",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_mapping(t_bytes32,t_enum(States)2983)",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:37"
+          },
+          {
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "254",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:43"
+          },
+          {
+            "label": "ercToken",
+            "offset": 0,
+            "slot": "255",
+            "type": "t_contract(IERC20)2940",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:45"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Swap)2979_storage)dyn_storage": {
+            "label": "struct EthertoERC20Swap.Swap[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2940": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_enum(States)2983": {
+            "label": "enum EthertoERC20Swap.States",
+            "members": [
+              "ISSUE",
+              "OPEN",
+              "SUCCESS"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_array(t_struct(Swap)2979_storage)dyn_storage)": {
+            "label": "mapping(address => struct EthertoERC20Swap.Swap[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_enum(States)2983)": {
+            "label": "mapping(bytes32 => enum EthertoERC20Swap.States)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)80_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(Swap)2979_storage)": {
+            "label": "mapping(bytes32 => struct EthertoERC20Swap.Swap)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)80_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Swap)2979_storage": {
+            "label": "struct EthertoERC20Swap.Swap",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "ethTrader",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "erc20Value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "erc20Trader",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "erc20ContractAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "swapDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "11f7c54950dd09ac686481574c4a3b709cc2e06f6473c898339804c7225a5b5e": {
+      "address": "0x5ee4d4f941329800bAb21e4625D6E44a41e3CfAD",
+      "txHash": "0x4019e50761dc48406b2ddd2355403714f0874f150b45f6b9daea4ef2c51ee5f4",
+      "layout": {
+        "solcVersion": "0.8.18",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "_roles",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_bytes32,t_struct(RoleData)80_storage)",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:62"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "AccessControlUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol:260"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "label": "swapLogs",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_mapping(t_address,t_array(t_struct(Swap)2977_storage)dyn_storage)",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:33"
+          },
+          {
+            "label": "swaps",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_mapping(t_bytes32,t_struct(Swap)2977_storage)",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:35"
+          },
+          {
+            "label": "swapStates",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_mapping(t_bytes32,t_enum(States)2981)",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:36"
+          },
+          {
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "254",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:42"
+          },
+          {
+            "label": "ercToken",
+            "offset": 0,
+            "slot": "255",
+            "type": "t_contract(IERC20)2940",
+            "contract": "EthertoERC20Swap",
+            "src": "contracts/EthertoERC20Swap.sol:44"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Swap)2977_storage)dyn_storage": {
+            "label": "struct EthertoERC20Swap.Swap[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IERC20)2940": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_enum(States)2981": {
+            "label": "enum EthertoERC20Swap.States",
+            "members": [
+              "ISSUE",
+              "OPEN",
+              "SUCCESS"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_array(t_struct(Swap)2977_storage)dyn_storage)": {
+            "label": "mapping(address => struct EthertoERC20Swap.Swap[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_enum(States)2981)": {
+            "label": "mapping(bytes32 => enum EthertoERC20Swap.States)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(RoleData)80_storage)": {
+            "label": "mapping(bytes32 => struct AccessControlUpgradeable.RoleData)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(Swap)2977_storage)": {
+            "label": "mapping(bytes32 => struct EthertoERC20Swap.Swap)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(RoleData)80_storage": {
+            "label": "struct AccessControlUpgradeable.RoleData",
+            "members": [
+              {
+                "label": "members",
+                "type": "t_mapping(t_address,t_bool)",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "adminRole",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_struct(Swap)2977_storage": {
+            "label": "struct EthertoERC20Swap.Swap",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "ethTrader",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "erc20Value",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "erc20ContractAddress",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "swapDate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              }
+            ],
+            "numberOfBytes": "160"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
